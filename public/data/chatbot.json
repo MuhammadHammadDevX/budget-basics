@@ -1,0 +1,129 @@
+{
+  "greeting": "Hi, I'm BudgetBee. Ask me about budgeting, saving, needs and wants, or common money mistakes.",
+  "fallback": "I don't have an answer for that yet. I can help with budgeting basics, needs vs. wants, the 50-30-20 rule, savings goals, tracking expenses and common money mistakes. Try one of the suggested questions below.",
+  "disclaimer": "BudgetBee gives basic educational information, not professional financial advice. For decisions about loans, investments, taxes or banking, talk to a qualified adviser or a trusted adult.",
+  "suggested": ["What is a need?", "How much should I save?", "How do I avoid overspending?", "What is the 50-30-20 rule?"],
+  "smallTalk": [
+    { "keywords": ["hello", "hi", "hey", "salam", "assalam"], "answer": "Hello! What would you like to learn about money today?" },
+    { "keywords": ["thank", "thanks", "shukriya"], "answer": "You're welcome. Small steps every month add up." },
+    { "keywords": ["who are you", "your name", "what are you"], "answer": "I'm BudgetBee, a rule-based helper that answers common student budgeting questions from a fixed list of topics." }
+  ],
+  "outOfScope": {
+    "keywords": ["invest", "stock", "crypto", "bitcoin", "forex", "loan", "credit card", "tax", "bank account", "insurance", "mortgage", "trading"],
+    "answer": "That topic needs personal, professional advice, so I can't give guidance on it. I can explain budgeting, saving and spending habits. For loans, investing, taxes or banking, please speak with a qualified adviser or a trusted adult."
+  },
+  "faqs": [
+    {
+      "id": "f1", "topic": "needs",
+      "question": "What is a need?",
+      "keywords": ["need", "needs", "essential", "necessary", "necessity"],
+      "answer": "A need is something you must pay for to live, study and stay safe: food, rent or hostel fees, transport to class, textbooks, utilities and medicine. If skipping it would harm your health, safety or studies, it's a need.",
+      "followUps": ["What is a want?", "How do I tell needs from wants?"],
+      "link": { "label": "Practise with the Needs vs. Wants classifier", "to": "/needs-wants" }
+    },
+    {
+      "id": "f2", "topic": "needs",
+      "question": "What is a want?",
+      "keywords": ["want", "wants", "luxury", "optional", "non essential", "nonessential"],
+      "answer": "A want makes life more fun or comfortable but can wait: eating out, streaming apps, new clothes you don't need yet, games and gadgets. Wants are fine to spend on, as long as they come from a set limit.",
+      "followUps": ["How do I tell needs from wants?", "How do I stop impulse buying?"],
+      "link": { "label": "Practise with the Needs vs. Wants classifier", "to": "/needs-wants" }
+    },
+    {
+      "id": "f3", "topic": "needs",
+      "question": "How do I tell needs from wants?",
+      "keywords": ["difference", "tell apart", "tell the difference", "need or want", "needs vs wants", "needs and wants", "classify"],
+      "answer": "Ask one question: 'Is this essential right now?' If yes, it's a need, so buy it from your needs budget. If no, it's a want, so wait 48 hours and check that it fits your wants budget before buying.",
+      "followUps": ["What is the 50-30-20 rule?", "How do I stop impulse buying?"],
+      "link": { "label": "See the visual decision guide", "to": "/needs-wants" }
+    },
+    {
+      "id": "f4", "topic": "saving",
+      "question": "How much should I save?",
+      "keywords": ["how much", "save", "saving", "savings", "percentage", "percent"],
+      "answer": "A common guideline is 20% of your income, from the 50-30-20 rule. If that feels like too much, start with 5% to 10% and increase it when you can. Saving a small amount every month matters more than the exact percentage.",
+      "followUps": ["What is the 50-30-20 rule?", "How do I set a savings goal?"],
+      "link": { "label": "Try the 50-30-20 calculator", "to": "/50-30-20" }
+    },
+    {
+      "id": "f5", "topic": "budgeting",
+      "question": "How do I avoid overspending?",
+      "keywords": ["overspend", "overspending", "spend less", "spending too much", "control spending", "stop spending", "run out"],
+      "answer": "Give each category a limit, pay fixed bills first, split your wants money into a weekly amount, wait 48 hours before non-essential purchases, and log every expense so you notice problems early.",
+      "followUps": ["How do I track my expenses?", "How do I stop impulse buying?"],
+      "link": { "label": "Plan expenses in the Expense Planner", "to": "/expense-planner" }
+    },
+    {
+      "id": "f6", "topic": "budgeting",
+      "question": "What is the 50-30-20 rule?",
+      "keywords": ["50-30-20", "50 30 20", "503020", "50/30/20", "rule", "split"],
+      "answer": "It's a simple guideline for dividing income: 50% for needs, 30% for wants and 20% for savings. It's a starting point you can adjust. Many students need more than 50% for needs, and that's okay.",
+      "followUps": ["How much should I save?", "What is a need?"],
+      "link": { "label": "Try the 50-30-20 calculator", "to": "/50-30-20" }
+    },
+    {
+      "id": "f7", "topic": "budgeting",
+      "question": "How do I make a budget?",
+      "keywords": ["make a budget", "create a budget", "start a budget", "budget", "budgeting", "plan my money", "start"],
+      "answer": "Start by writing down your total monthly income. List your fixed expenses, then estimate variable ones. Decide your savings amount and move it first. Whatever remains is your spending limit for wants.",
+      "followUps": ["What is the 50-30-20 rule?", "What are fixed and variable expenses?"],
+      "link": { "label": "Read Budgeting Basics", "to": "/basics" }
+    },
+    {
+      "id": "f8", "topic": "expenses",
+      "question": "What are fixed and variable expenses?",
+      "keywords": ["fixed", "variable", "expense types", "types of expenses"],
+      "answer": "Fixed expenses stay the same every month, like rent or a bus pass. Variable expenses change with your choices, like groceries, eating out and shopping. Variable expenses are where most savings can be found.",
+      "followUps": ["How do I track my expenses?", "How do I make a budget?"],
+      "link": { "label": "Read Budgeting Basics", "to": "/basics" }
+    },
+    {
+      "id": "f9", "topic": "goals",
+      "question": "How do I set a savings goal?",
+      "keywords": ["goal", "goals", "target", "save for", "saving for", "laptop", "phone"],
+      "answer": "Give your goal a name, a target amount and a monthly amount you can save. Divide what's left to save by the monthly amount to see how many months it will take. A clear name and date keep you motivated.",
+      "followUps": ["How much should I save?", "What is an emergency fund?"],
+      "link": { "label": "Use the Savings Goal calculator", "to": "/savings-goals" }
+    },
+    {
+      "id": "f10", "topic": "saving",
+      "question": "What is an emergency fund?",
+      "keywords": ["emergency", "emergency fund", "unexpected", "surprise", "rainy day"],
+      "answer": "An emergency fund is money kept aside only for surprises, like a broken phone or a medical visit. Students can start with $5 to $10 a month and keep it separate from spending money.",
+      "followUps": ["How do I set a savings goal?", "How much should I save?"],
+      "link": { "label": "Use the Savings Goal calculator", "to": "/savings-goals" }
+    },
+    {
+      "id": "f11", "topic": "expenses",
+      "question": "How do I stop impulse buying?",
+      "keywords": ["impulse", "sale", "discount", "urge", "buying too much", "shopping"],
+      "answer": "Use the 48-hour rule for anything that isn't a need, remove saved cards from shopping apps, unfollow sale alerts, and keep a list of wants to review at the end of the month.",
+      "followUps": ["How do I avoid overspending?", "What is a want?"],
+      "link": { "label": "Read Common Money Mistakes", "to": "/money-mistakes" }
+    },
+    {
+      "id": "f12", "topic": "expenses",
+      "question": "How do I track my expenses?",
+      "keywords": ["track", "tracking", "log", "record", "where did my money go", "monitor"],
+      "answer": "Write down every purchase with its date, category and amount, including small ones. Check the total each week against your plan. The Expense Planner on this site lets you practise with sample entries.",
+      "followUps": ["How do I avoid overspending?", "What are fixed and variable expenses?"],
+      "link": { "label": "Open the Expense Planner", "to": "/expense-planner" }
+    },
+    {
+      "id": "f13", "topic": "expenses",
+      "question": "Are subscriptions a problem?",
+      "keywords": ["subscription", "subscriptions", "streaming", "netflix", "spotify", "gaming pass"],
+      "answer": "Only when you forget about them. Review subscriptions once a month, keep the ones you actually use and cancel the rest. Rotating one service at a time works well.",
+      "followUps": ["How do I avoid overspending?", "How do I track my expenses?"],
+      "link": { "label": "Read Common Money Mistakes", "to": "/money-mistakes" }
+    },
+    {
+      "id": "f14", "topic": "budgeting",
+      "question": "How can I earn money as a student?",
+      "keywords": ["earn", "income", "part time", "part-time", "job", "tutoring", "freelance", "allowance"],
+      "answer": "Common options are tutoring, campus jobs, internships and freelancing with skills like design or writing. Plan your budget with money you're sure to receive, and treat extra earnings as a bonus for savings.",
+      "followUps": ["How do I make a budget?", "How much should I save?"],
+      "link": { "label": "Read Budgeting Basics", "to": "/basics" }
+    }
+  ]
+}

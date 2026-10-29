@@ -1,0 +1,278 @@
+:root {
+  --paper: #f3f6f4;
+  --surface: #ffffff;
+  --surface-2: #e7efeb;
+  --line: #cbd8d2;
+  --line-strong: #9fb3ab;
+
+  --ink: #17324d;
+  --text: #1c2b36;
+  --muted: #4c5e6b;
+
+  --teal: #1b7f79;
+  --teal-deep: #125c57;
+  --teal-soft: #dcefe9;
+  --coin: #e8a317;
+  --coin-soft: #fdf1d6;
+  --coin-ink: #815400;
+  --on-primary: #ffffff;
+
+  --needs: #1b7f79;
+  --wants: #d9951a;
+  --savings: #2f5e8c;
+  --income: #17324d;
+
+ 
+  --ok: #1e6f42;
+  --ok-soft: #e1f2e7;
+  --danger: #b0362b;
+  --danger-soft: #fbe8e5;
+
+  --focus: #2f5e8c;
+  --shadow: 0 1px 2px rgba(23, 50, 77, 0.06), 0 6px 18px rgba(23, 50, 77, 0.06);
+
+  --font-body: 'Atkinson Hyperlegible', 'Segoe UI', Verdana, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Trebuchet MS', 'Segoe UI', sans-serif;
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --container: 1160px;
+
+  color-scheme: light;
+}
+
+
+[data-theme='dark'] {
+  --paper: #0e1a21;
+  --surface: #15252e;
+  --surface-2: #1c313b;
+  --line: #2c434d;
+  --line-strong: #4a6570;
+
+  --ink: #e6f0ee;
+  --text: #dbe6e3;
+  --muted: #a5b8b6;
+
+  --teal: #4fc1b6;
+  --teal-deep: #86dbd1;
+  --teal-soft: #173a3b;
+  --coin: #f2c14e;
+  --coin-soft: #3a3120;
+  --coin-ink: #f2c14e;
+  --on-primary: #0e1a21;
+
+  --needs: #4fc1b6;
+  --wants: #f2c14e;
+  --savings: #8db4e2;
+  --income: #e6f0ee;
+
+  --ok: #6fd39a;
+  --ok-soft: #173427;
+  --danger: #f39184;
+  --danger-soft: #3b2220;
+
+  --focus: #f2c14e;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 1rem;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 2.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--teal-deep);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+[data-theme='dark'] a {
+  color: var(--teal);
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+ul,
+ol {
+  margin: 0 0 1em;
+  padding-left: 1.25em;
+}
+
+mark {
+  background: var(--coin-soft);
+  color: inherit;
+  padding: 0 0.1em;
+  border-radius: 3px;
+  box-shadow: inset 0 -2px 0 var(--coin);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+main:focus {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 2rem);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.section-title {
+  font-size: clamp(1.35rem, 1.15rem + 0.7vw, 1.65rem);
+}
+
+.text-link {
+  font-weight: 700;
+}
+
+.tone-needs {
+  --tone: var(--needs);
+}
+.tone-wants {
+  --tone: var(--wants);
+}
+.tone-savings {
+  --tone: var(--savings);
+}
+.tone-neutral {
+  --tone: var(--ink);
+}
+.tone-danger {
+  --tone: var(--danger);
+}
+
+.tone-text-needs {
+  color: var(--needs);
+}
+.tone-text-wants {
+  color: var(--coin-ink);
+}
+.tone-text-savings {
+  color: var(--savings);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

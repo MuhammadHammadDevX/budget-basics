@@ -1,0 +1,56 @@
+[
+  {
+    "id": "m1",
+    "title": "Impulse buying",
+    "topic": "expenses",
+    "date": "2026-08-02",
+    "scenario": "Bilal sees a 40% off sale on headphones during a study break and buys them in two minutes. Later that week he is short on bus fare.",
+    "cost": "$45 spent that was meant for transport.",
+    "fix": "Use the 48-hour rule for anything that is not a need. Remove saved cards from shopping apps so every purchase takes a few extra steps."
+  },
+  {
+    "id": "m2",
+    "title": "Ignoring small expenses",
+    "topic": "expenses",
+    "date": "2026-08-10",
+    "scenario": "Sara buys a $4 snack or coffee every day between classes and never writes it down. At month end she cannot explain where $120 went.",
+    "cost": "About $120 a month, or $1,460 a year.",
+    "fix": "Log every purchase for one month in the Expense Planner. Set a weekly snack limit and carry a water bottle and snacks from home."
+  },
+  {
+    "id": "m3",
+    "title": "Late payments",
+    "topic": "needs",
+    "date": "2026-08-18",
+    "scenario": "Hamza forgets his hostel fee due date during exams and pays a week late, which adds a late fee.",
+    "cost": "A $15 late fee for something he had the money for.",
+    "fix": "Put every due date in your phone calendar with a reminder three days before. Pay fixed bills the day your allowance arrives."
+  },
+  {
+    "id": "m4",
+    "title": "Unused subscriptions",
+    "topic": "saving",
+    "date": "2026-08-25",
+    "scenario": "Zara pays for three streaming apps and a gaming pass, but only uses one app regularly.",
+    "cost": "$25 a month on services she barely opens.",
+    "fix": "List every subscription once a month. Keep one, cancel the rest, and rotate if you want a different show later."
+  },
+  {
+    "id": "m5",
+    "title": "Spending without a plan",
+    "topic": "budgeting",
+    "date": "2026-09-01",
+    "scenario": "Omar spends freely in the first two weeks after his allowance arrives, then borrows from friends for the rest of the month.",
+    "cost": "Money stress, borrowed cash to repay and no savings.",
+    "fix": "Split your allowance on day one with the 50-30-20 calculator, then divide your wants money by four to get a weekly limit."
+  },
+  {
+    "id": "m6",
+    "title": "No emergency fund",
+    "topic": "goals",
+    "date": "2026-09-08",
+    "scenario": "Hina's phone screen cracks right before exams and she has nothing saved to fix it.",
+    "cost": "An $80 repair paid for by cutting food money.",
+    "fix": "Start a small emergency fund with even $5 to $10 a month. Keep it separate from your spending money."
+  }
+]

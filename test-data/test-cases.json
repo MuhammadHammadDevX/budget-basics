@@ -1,0 +1,56 @@
+{
+  "description": "Test data used to check BudgetBasics. Each case lists the inputs typed into the site and the expected result. All values are sample US dollars.",
+  "budget503020": [
+    { "id": "B1", "income": "", "expected": "Error: Monthly income is required." },
+    { "id": "B2", "income": "abc", "expected": "Error: Monthly income must be a number, for example 500 or 49.99." },
+    { "id": "B3", "income": "-50", "expected": "Error: Monthly income can't be negative." },
+    { "id": "B4", "income": "0", "expected": "Error: Monthly income must be more than 0." },
+    { "id": "B5", "income": "10.999", "expected": "Error: Monthly income can have at most 2 decimal places." },
+    { "id": "B6", "income": "500", "expected": { "needs": 250, "wants": 150, "savings": 100 } },
+    { "id": "B7", "income": "800", "expected": { "needs": 400, "wants": 240, "savings": 160 } },
+    { "id": "B8", "income": "1,250", "expected": { "needs": 625, "wants": 375, "savings": 250 } },
+    { "id": "B9", "income": "800", "customSplit": { "needs": 60, "wants": 30, "savings": 20 }, "expected": "Error: The three parts add up to 110%. They must add up to 100%." },
+    { "id": "B10", "income": "800", "customSplit": { "needs": 60, "wants": 20, "savings": 20 }, "expected": { "needs": 480, "wants": 160, "savings": 160 } }
+  ],
+  "savingsGoals": [
+    { "id": "S1", "goalName": "", "target": "", "current": "", "monthly": "", "expected": "Four errors, focus moves to Goal name" },
+    { "id": "S2", "goalName": "Laptop", "target": "600", "current": "-5", "monthly": "50", "expected": "Error: Current savings can't be negative." },
+    { "id": "S3", "goalName": "Laptop", "target": "600", "current": "150", "monthly": "0", "expected": "Error: Monthly contribution must be more than 0." },
+    { "id": "S4", "goalName": "New laptop", "target": "600", "current": "150", "monthly": "50", "expected": { "remaining": 450, "months": 9, "progressPercent": 25 } },
+    { "id": "S5", "goalName": "Trip home", "target": "300", "current": "0", "monthly": "40", "expected": { "remaining": 300, "months": 8, "progressPercent": 0 } },
+    { "id": "S6", "goalName": "Laptop", "target": "600", "current": "700", "monthly": "50", "expected": { "remaining": 0, "months": 0, "message": "Goal reached", "progressPercent": 100 } }
+  ],
+  "expensePlanner": [
+    { "id": "E1", "startingBalance": "500", "action": "Add with empty description and amount", "expected": "Errors: Enter a description. Amount is required." },
+    { "id": "E2", "startingBalance": "500", "action": "Add Education / Textbook / 45.5 to the 3 sample entries (265.50)", "expected": { "total": 311.0, "remaining": 189.0 } },
+    { "id": "E3", "startingBalance": "500", "action": "Edit Textbook amount to 300", "expected": { "total": 565.5, "remaining": -65.5, "warning": "These expenses are $65.50 more than your balance." } },
+    { "id": "E4", "startingBalance": "500", "action": "Remove Textbook", "expected": { "rows": 3, "total": 265.5 } },
+    { "id": "E5", "startingBalance": "abc", "action": "Type in starting balance", "expected": "Error: Starting balance must be a number." },
+    { "id": "E6", "action": "Clear all, then confirm Remove all", "expected": "Empty table message is shown" }
+  ],
+  "chatbot": [
+    { "id": "C1", "question": "What is a need?", "expectedTopic": "f1 What is a need?" },
+    { "id": "C2", "question": "How much should I save?", "expectedTopic": "f4 How much should I save?" },
+    { "id": "C3", "question": "How do I avoid overspending?", "expectedTopic": "f5 How do I avoid overspending?" },
+    { "id": "C4", "question": "what is the 50-30-20 rule", "expectedTopic": "f6 50-30-20 rule" },
+    { "id": "C5", "question": "I keep buying stuff on sale", "expectedTopic": "f11 Impulse buying" },
+    { "id": "C6", "question": "should I buy bitcoin", "expectedTopic": "Out-of-scope refusal (not financial advice)" },
+    { "id": "C7", "question": "tell me about dinosaurs", "expectedTopic": "Fallback message with suggested questions" },
+    { "id": "C8", "question": "", "expectedTopic": "Error: Type a question first, or pick a suggested question." }
+  ],
+  "habitTips": [
+    { "id": "H1", "habits": ["h1", "h3"], "allowance": "500", "expected": { "monthly": 110, "yearly": 1320, "shareOfAllowance": "22%" } },
+    { "id": "H2", "habits": [], "allowance": "", "expected": "Error: Choose at least one habit that sounds like you." }
+  ],
+  "search": [
+    { "id": "Q1", "query": "saving", "expected": "Results from tips, guides, questions and infographics" },
+    { "id": "Q2", "query": "zzqq", "expected": "No matching content found message" },
+    { "id": "Q3", "query": "", "topic": "goals", "sort": "A to Z", "expected": "First result: Name your savings goal" }
+  ],
+  "forms": [
+    { "id": "F1", "form": "Feedback", "input": "All empty", "expected": "4 errors: name, email, rating, comments" },
+    { "id": "F2", "form": "Feedback", "input": { "email": "ayesha@example" }, "expected": "Error: Enter an email address like name@example.com." },
+    { "id": "F3", "form": "Feedback", "input": { "name": "Ayesha Khan", "email": "ayesha@example.com", "rating": 5, "comments": "Really clear calculators, thanks!" }, "expected": "Confirmation: Thanks, Ayesha. Nothing is sent or stored." },
+    { "id": "F4", "form": "Contact", "input": { "name": "Ali", "email": "ali@test.com", "subject": "", "message": "short" }, "expected": "Errors: Choose a subject. Your message must be at least 10 characters." }
+  ]
+}

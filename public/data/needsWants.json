@@ -1,0 +1,24 @@
+{
+  "examples": {
+    "needs": ["Food and groceries", "Rent or hostel fees", "Transport to class", "Textbooks", "Utilities and phone plan", "Medicine"],
+    "wants": ["Snacks and takeaway coffee", "Video games", "Streaming apps", "Fashion and new sneakers", "Eating out", "Concert tickets"]
+  },
+  "items": [
+    { "id": "i1", "name": "Required course textbook", "answer": "need", "explanation": "You need it to study. You can still save by buying used or borrowing from the library." },
+    { "id": "i2", "name": "Third streaming subscription", "answer": "want", "explanation": "Entertainment is nice to have, and one subscription is usually enough." },
+    { "id": "i3", "name": "Weekly groceries", "answer": "need", "explanation": "Basic food keeps you healthy and able to study." },
+    { "id": "i4", "name": "Designer sneakers", "answer": "want", "explanation": "Shoes are a need, but a designer pair is a want. A regular pair does the same job." },
+    { "id": "i5", "name": "Monthly bus pass", "answer": "need", "explanation": "Getting to class and work is essential." },
+    { "id": "i6", "name": "Daily café latte", "answer": "want", "explanation": "Small daily treats add up fast. Coffee made at home costs far less." },
+    { "id": "i7", "name": "Hostel rent", "answer": "need", "explanation": "A safe place to live is one of the most important needs." },
+    { "id": "i8", "name": "Latest phone upgrade", "answer": "want", "explanation": "If your current phone works, an upgrade can wait and be planned as a savings goal." },
+    { "id": "i9", "name": "Prescribed medicine", "answer": "need", "explanation": "Health always comes first." },
+    { "id": "i10", "name": "Weekend concert ticket", "answer": "want", "explanation": "Fun is important too. Pay for it from your wants budget, not your rent money." }
+  ],
+  "delayRules": [
+    { "title": "Wait 48 hours", "text": "If you still want it after two days, it is more than an impulse." },
+    { "title": "Count it in hours", "text": "Divide the price by what you earn per hour. Is it worth that much of your time?" },
+    { "title": "Check your wants budget", "text": "Only buy if the price fits in what is left for wants this month." },
+    { "title": "Make it a goal", "text": "Big wants become savings goals. Plan them instead of cutting them out." }
+  ]
+}

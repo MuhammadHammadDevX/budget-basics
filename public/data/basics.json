@@ -1,0 +1,92 @@
+{
+  "concepts": [
+    {
+      "id": "income",
+      "title": "Income",
+      "group": "income",
+      "definition": "All the money coming in during a month.",
+      "examples": ["Monthly allowance", "Scholarship or stipend", "Internship or part-time pay"],
+      "tip": "Plan with the amount you are sure to receive, not the amount you hope for."
+    },
+    {
+      "id": "fixed",
+      "title": "Fixed expenses",
+      "group": "needs",
+      "definition": "Costs that stay the same every month and are hard to skip.",
+      "examples": ["Hostel rent", "Monthly bus pass", "Phone plan"],
+      "tip": "Pay these first, right after your income arrives."
+    },
+    {
+      "id": "variable",
+      "title": "Variable expenses",
+      "group": "wants",
+      "definition": "Costs that change from month to month depending on your choices.",
+      "examples": ["Groceries and snacks", "Eating out", "Shopping"],
+      "tip": "This is where most overspending happens, so track these closely."
+    },
+    {
+      "id": "needs",
+      "title": "Needs",
+      "group": "needs",
+      "definition": "Things you must pay for to live, study and stay safe.",
+      "examples": ["Basic food", "Textbooks", "Transport to class"],
+      "tip": "A need can still be bought cheaply: used books count too."
+    },
+    {
+      "id": "wants",
+      "title": "Wants",
+      "group": "wants",
+      "definition": "Things that make life more fun or comfortable but can wait.",
+      "examples": ["Streaming apps", "New sneakers", "Weekend outings"],
+      "tip": "Wants are fine. Give them a set limit instead of cutting them out."
+    },
+    {
+      "id": "savings",
+      "title": "Savings",
+      "group": "savings",
+      "definition": "Money you keep aside for goals and emergencies.",
+      "examples": ["Emergency fund", "New laptop goal", "Next semester fees"],
+      "tip": "Treat savings as a bill you pay yourself every month."
+    }
+  ],
+  "sampleBudget": {
+    "title": "Ayesha's month: a first-year student living in a hostel",
+    "income": [
+      { "source": "Allowance from family", "amount": 400 },
+      { "source": "Weekend tutoring", "amount": 100 }
+    ],
+    "rows": [
+      { "item": "Hostel rent", "type": "Fixed need", "group": "needs", "amount": 200 },
+      { "item": "Groceries and mess", "type": "Variable need", "group": "needs", "amount": 100 },
+      { "item": "Bus pass", "type": "Fixed need", "group": "needs", "amount": 40 },
+      { "item": "Books and stationery", "type": "Variable need", "group": "needs", "amount": 30 },
+      { "item": "Eating out and movies", "type": "Variable want", "group": "wants", "amount": 60 },
+      { "item": "Streaming subscription", "type": "Fixed want", "group": "wants", "amount": 10 },
+      { "item": "Emergency fund", "type": "Savings", "group": "savings", "amount": 40 },
+      { "item": "Laptop goal", "type": "Savings", "group": "savings", "amount": 20 }
+    ]
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "question": "Monthly hostel rent is an example of which kind of expense?",
+      "options": ["Fixed expense", "Variable expense", "Savings"],
+      "answer": 0,
+      "explanation": "Rent is the same amount every month, so it is a fixed expense."
+    },
+    {
+      "id": "q2",
+      "question": "Your grocery bill was $80 last month and $110 this month. What kind of expense is it?",
+      "options": ["Fixed expense", "Variable expense", "Income"],
+      "answer": 1,
+      "explanation": "The amount changes month to month, which makes it a variable expense."
+    },
+    {
+      "id": "q3",
+      "question": "When is the best time to move money into savings?",
+      "options": ["At the end of the month, if anything is left", "As soon as income arrives", "Only when you get a bonus"],
+      "answer": 1,
+      "explanation": "Saving first, before spending, makes the habit automatic instead of optional."
+    }
+  ]
+}

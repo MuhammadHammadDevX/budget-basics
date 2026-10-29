@@ -1,0 +1,82 @@
+[
+  {
+    "id": "g1",
+    "title": "Needs vs. wants at a glance",
+    "topic": "needs",
+    "date": "2026-09-01",
+    "image": "images/needs-vs-wants.jpg",
+    "alt": "Two panels. Basic needs: groceries, housing, utilities, clothing, healthcare, transport, bus pass and savings. Wants: electronics, coffee, entertainment, fashion, streaming, hobbies, travel and dining out.",
+    "caption": "Everyday items sorted into basic needs and wants.",
+    "link": "/needs-wants"
+  },
+  {
+    "id": "g2",
+    "title": "Should I buy it now?",
+    "topic": "needs",
+    "date": "2026-09-12",
+    "image": "images/needs-decision-guide.svg",
+    "alt": "Flowchart: if a purchase is essential, buy it from your needs budget. If not, wait 48 hours, then buy only if it still fits your wants budget; otherwise save the money.",
+    "caption": "A decision guide for delaying non-essential purchases.",
+    "link": "/needs-wants"
+  },
+  {
+    "id": "g3",
+    "title": "The 50-30-20 split",
+    "topic": "budgeting",
+    "date": "2026-09-05",
+    "image": "images/50-30-20-rule.jpg",
+    "alt": "Donut chart dividing monthly income into 50 percent needs, 30 percent wants and 20 percent savings, with example expenses for each part.",
+    "caption": "How the 50-30-20 guideline divides monthly income.",
+    "link": "/50-30-20"
+  },
+  {
+    "id": "g4",
+    "title": "The monthly budget cycle",
+    "topic": "budgeting",
+    "date": "2026-09-18",
+    "image": "images/budget-cycle.svg",
+    "alt": "Five repeating steps in a circle: plan, track, review, adjust and save.",
+    "caption": "Plan, track, review, adjust and save, then repeat each month.",
+    "link": "/basics"
+  },
+  {
+    "id": "g5",
+    "title": "A sample student month",
+    "topic": "budgeting",
+    "date": "2026-08-22",
+    "image": "images/sample-month.svg",
+    "alt": "Bar showing a 500 dollar allowance split into rent 200, food 100, transport 40, books 30, wants 90 and savings 40.",
+    "caption": "How a $500 allowance could be divided.",
+    "link": "/basics"
+  },
+  {
+    "id": "g6",
+    "title": "The 52-week savings challenge",
+    "topic": "saving",
+    "date": "2026-09-08",
+    "image": "images/52-week-challenge.svg",
+    "alt": "Bar chart growing from 1 dollar in week 1 to 52 dollars in week 52, for a total of 1,378 dollars saved.",
+    "caption": "Save a little more each week and reach $1,378 in a year.",
+    "link": "/savings-goals"
+  },
+  {
+    "id": "g7",
+    "title": "Student savings challenge",
+    "topic": "saving",
+    "date": "2026-08-30",
+    "image": "images/savings-challenge.jpg",
+    "alt": "Illustrated dashboard of savings ideas: buy used textbooks, cook at home, use free campus events and take public transport.",
+    "caption": "Everyday ways students cut costs in each spending category.",
+    "link": "/savings-goals"
+  },
+  {
+    "id": "g8",
+    "title": "Small expenses add up",
+    "topic": "expenses",
+    "date": "2026-09-14",
+    "image": "images/small-expenses.svg",
+    "alt": "Growing circles: 4 dollars a day becomes 28 a week, 120 a month, 480 a semester and 1,460 a year.",
+    "caption": "What a $4 daily habit costs over time.",
+    "link": "/money-mistakes"
+  }
+]

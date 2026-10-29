@@ -1,0 +1,66 @@
+[
+  {
+    "id": "h1",
+    "label": "I buy snacks or coffee almost every day",
+    "category": "Food",
+    "monthlySaving": 60,
+    "tip": "Bring snacks and a refillable bottle from home on weekdays and keep café visits for one day a week.",
+    "action": "Set a weekly snack limit of $10."
+  },
+  {
+    "id": "h2",
+    "label": "I pay for more than one streaming or gaming subscription",
+    "category": "Entertainment",
+    "monthlySaving": 15,
+    "tip": "Keep one subscription and rotate to another only after cancelling the first.",
+    "action": "Check every subscription on the first of the month."
+  },
+  {
+    "id": "h3",
+    "label": "I order food delivery several times a week",
+    "category": "Food",
+    "monthlySaving": 50,
+    "tip": "Delivery fees and tips can add a third to the price. Cook in batches with friends twice a week instead.",
+    "action": "Limit delivery to one weekend treat."
+  },
+  {
+    "id": "h4",
+    "label": "I buy things when I see a sale",
+    "category": "Shopping",
+    "monthlySaving": 40,
+    "tip": "A sale only saves money if you planned to buy the item anyway. Wait 48 hours before any sale purchase.",
+    "action": "Unfollow sale alerts and remove saved cards from apps."
+  },
+  {
+    "id": "h5",
+    "label": "I take ride-hailing cabs for short trips",
+    "category": "Transport",
+    "monthlySaving": 30,
+    "tip": "A student bus pass or sharing rides with classmates usually costs far less than daily cabs.",
+    "action": "Plan trips the night before so you are not rushing."
+  },
+  {
+    "id": "h6",
+    "label": "I spend most of my allowance in the first two weeks",
+    "category": "Planning",
+    "monthlySaving": 35,
+    "tip": "Split your wants money into four weekly amounts so the last two weeks are covered too.",
+    "action": "Move savings aside the day your allowance arrives."
+  },
+  {
+    "id": "h7",
+    "label": "I buy new textbooks every semester",
+    "category": "Education",
+    "monthlySaving": 20,
+    "tip": "Used copies, library loans and digital editions often cost half as much.",
+    "action": "Ask seniors for their books before the semester starts."
+  },
+  {
+    "id": "h8",
+    "label": "I don't track what I spend",
+    "category": "Planning",
+    "monthlySaving": 25,
+    "tip": "You can't fix what you can't see. Logging every purchase for one month shows where money leaks.",
+    "action": "Try the Expense Planner for a week of sample entries."
+  }
+]
